@@ -14,10 +14,10 @@ class Controller extends BaseController
     /**
      * Call if the request was processed unsuccessfully
      *
-     * @param string $message
+     * @param object|string $message
      * @return json
      */
-    protected function eApi(string $message = 'Error')
+    protected function eApi($message = 'Error')
     {
         $array = [
             'success' => false,
@@ -30,14 +30,14 @@ class Controller extends BaseController
     /**
      * Call if the request was processed successfully
      *
-     * @param $payload
+     * @param mixed|null $payload
      * @return json
      */
-    protected function aApi($payload)
+    protected function sApi($payload = null)
     {
         $array = [
             'success' => true,
-            'payload' => $payload
+            'payload' => !is_null($payload) ? $payload : []
         ];
 
         return response()->json($array);

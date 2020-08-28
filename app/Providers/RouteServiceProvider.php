@@ -28,7 +28,7 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
-    public const FAILAUTH = 'Invalid Token';
+    public const FAILAUTH = 'Invalid Token OR Invalid Email OR Invalid Password';
 
     /**
      * Define your route model bindings, pattern filters, etc.

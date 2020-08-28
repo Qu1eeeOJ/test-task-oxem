@@ -1,0 +1,5 @@
+[
+	{"external_id": 1, "name": "Product 1", "price": 101.01, "category_id": [1,2], "quantity": 15},
+	{"external_id": 2, "name": "Product 2", "price": 199.01, "category_id": [2,3], "quantity": 12},
+	{"external_id": 3, "name": "Product 4", "price": 999.01, "category_id": [3,1], "quantity": 10}
+]
